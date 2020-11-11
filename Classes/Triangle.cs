@@ -17,17 +17,20 @@ namespace itv
             
         }
         //площадь
-        public double Area
+       private double area;
+        public double Area 
         {
             get 
             {
-                if (Area <= 0)
+                if (area == 0)
                 {
-                    return CalculateArea();
-                    Area = CalculateArea();
+                    area = CalculateArea();
+                    return area;
+
                 }
                 else
-                    return Area;
+                    return area;
+                
             }
         }
         // уровень вложенности треугольника

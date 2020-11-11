@@ -24,6 +24,7 @@ namespace itv
                 if (Area <= 0)
                 {
                     return CalculateArea();
+                    Area = CalculateArea();
                 }
                 else
                     return Area;

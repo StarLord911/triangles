@@ -17,7 +17,18 @@ namespace itv
             
         }
         //площадь
-        public double Area { get { return CalculateArea(); } }
+        public double Area
+        {
+            get 
+            {
+                if (Area <= 0)
+                {
+                    return CalculateArea();
+                }
+                else
+                    return Area;
+            }
+        }
         // уровень вложенности треугольника
         public int NestedLevel;
 
